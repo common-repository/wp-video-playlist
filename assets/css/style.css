@@ -1,0 +1,76 @@
+@import url('font-awesome.min.css');
+
+.mediaTemplate {font-size: 14px;}
+.mediaTemplate, .mediaTemplate * {-webkit-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;}
+.mediaTemplate h1 {font-size: 1.5em;margin: 0;padding: 0;}
+
+/* Player Style */
+.audioPlayer .jp-jplayer, #jplayer-audio-container {width: 100%;}
+.audioPlayer .jp-controls button {text-indent: 0;}
+.jp-audio, .jp-video {background: black;color: #fff;font-family: sans-serif;font-size: 16px;margin: 0em auto;max-width: 35em;width: 100%;}
+.jp_video {padding-bottom: 56.4%;position: relative;width: 100% !important;}
+.jp_video > * {height: 100% !important;left: 50%;object-fit: cover;position: absolute;top: 50%;transform: translate(-50%, -50%);width: 100% !important;}
+.jp-type-playlist {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-flex-direction: column;-moz-flex-direction: column;-ms-flex-direction: column;flex-direction: column;height: 100%;}
+.jp-type-playlist .jp-close {-webkit-flex-grow: 0;-moz-flex-grow: 0;-ms-flex-grow: 0;flex-grow: 0;}
+.jp-type-playlist .jp-gui {/* -webkit-flex-grow: 0; */-moz-flex-grow: 0;-ms-flex-grow: 0;/* flex-grow: 0; */}
+.jp-type-playlist .jp-playlist {-webkit-flex-grow: 1;-moz-flex-grow: 1;-ms-flex-grow: 1;flex-grow: 1;overflow-y: auto;}
+.jp-btn {border: 0;padding: 0;outline: none;background: none;color: #fff;height: 1.5em;line-height: 1.5em;padding: 0em 1em;}
+.jp-gui {background: rgba(255, 255, 255, 0.05);padding: 1em;}
+.jp-gui .jp-title {display: inline-block;color: #fff;height: 1.5em;width: 7.5em;line-height: 1.5em;overflow: hidden;opacity: 0.5;}
+.jp-gui .jp-toggles {display: inline-block;float: right;}
+.jp-gui .jp-toggles .jp-repeat,
+.jp-gui .jp-toggles .jp-shuffle {display: inline-block;float: left;vertical-align: top;opacity: 0.5;}
+.jp-gui .jp-times {display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;margin-top: .5em;}
+.jp-gui .jp-times .jp-current-time,
+.jp-gui .jp-times .jp-duration {-webkit-flex-grow: 1;-moz-flex-grow: 1;-ms-flex-grow: 1;flex-grow: 1;color: #fff;font-size: .6em;opacity: 0.5;}
+.jp-gui .jp-times .jp-current-time {text-align: left;}
+.jp-gui .jp-times .jp-duration {text-align: right;}
+.jp-gui .jp-volume-controls {-webkit-align-content: center;-ms-align-content: center;align-content: center;-webkit-align-items: center;-ms-align-items: center;align-items: center;display: table;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;min-width: 1em;}
+.jp-gui .jp-volume-controls .jp-volume-max {opacity: 1;}
+.jp-gui .jp-volume-controls .jp-mute {display: inline-block;vertical-align: top;margin-right: -0.45em;opacity: 0.5;}
+.jp-gui .jp-volume-controls .jp-volume-bar {vertical-align: top;width: 4em;height: .1em;background: rgba(255, 255, 255, 0.5);margin: .65em 0;margin-left: 0.3em;}
+.jp-gui .jp-volume-controls .jp-volume-bar .jp-volume-bar-value {background: #fff;height: .1em;}
+.jp-gui .jp-controls-holder .jp-controls {-webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;}
+.jp-gui .jp-controls-holder .jp-controls button {height: 2.5em;line-height: 2.5em;outline: none !important;padding: 0 .75em;}
+.jp-gui .jp-controls-holder .jp-controls button + button {margin-left: 1em;}
+.jp-gui .jp-controls-holder .jp-controls button i {font-size: 1.25em;}
+.jp-gui .jp-controls-holder .jp-progress .jp-seek-bar {background: rgba(255, 255, 255, 0.5);height: .15em;}
+.jp-gui .jp-controls-holder .jp-progress .jp-seek-bar .jp-play-bar {background: #fff;height: .15em;}
+.jp-state-playing .jp-play i::before {content: "\f04c";}
+.jp-state-looped .jp-repeat {opacity: 1 !important;}
+.jp-state-shuffled .jp-shuffle {opacity: 1 !important;}
+.jp-state-muted .jp-mute {opacity: 1 !important;}
+.jp-state-muted .jp-volume-max {opacity: 0 !important;}
+button.active, button:hover {background-color: #fff !important;}
+button.active i, button:hover i {color: #0d0d0d;}
+.jp-playlist {background: rgba(255, 255, 255, 0);}
+.jp-playlist > ul {padding: 0;margin: 0;list-style: none;}
+.jp-playlist > ul > li {display: block;padding: 0em !important;}
+.jp-playlist > ul > li > div > a.jp-playlist-item {display: block;padding: .75em 1em;outline: none;color: rgba(255, 255, 255, 0.5);}
+.jp-playlist > ul > li > div > a.jp-playlist-item.jp-playlist-current {background: rgba(255, 255, 255, 0.2);color: #fff;}
+.jp-playlist > ul > li:nth-child(odd) > div > a {background: rgba(255, 255, 255, 0.1);}
+.jp-gui button {background: transparent;color: #fff;padding: 0;}
+.jp-interface, .jp-controls-holder {-webkit-align-content: center;-ms-align-content: center;align-content: center;-webkit-align-items: center;-ms-align-items: center;align-items: center;display: table;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;justify-content: space-between;width: 100%;}
+.jp-gui .jp-toggles {-webkit-align-content: center;-ms-align-content: center;align-content: center;-webkit-align-items: center;-ms-align-items: center;align-items: center;display: table;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;/* width: 100%; */}
+.jp-controls-holder, .jp-progress {width: 100%;}
+.jp-seek-bar {background: rgba(255, 255, 255, 0.5);height: .15em;}
+.jp-play-bar {background-color: #fff;height: 100%;}
+.jp-gui .jp-toggles button + button {margin-left: .3em;}
+#jp_video {height: auto !important;position: relative;padding-bottom: 54.3%;width: 100% !important;}
+#jp_video > * {height: 100% !important;-webkit-object-fit: cover;-ms-object-fit: cover;object-fit: contain;position: absolute;width: 100% !important;}
+
+.nav-pills {background-color: #f1f1f1;border-radius: .3em .3em 0em 0em;display: -webkit-box;display: -ms-flexbox;display: flex;margin: 0;margin-bottom: 0em;margin-top: 1em;overflow: hidden;padding: 0;list-style-type: none;}
+.nav-pills li {display: inline-block;margin: 0em -.1em;padding: 0.7em 2em 0.7em;}
+.nav-pills li a {border: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;color: #000;font-size: 1.2em;outline: none !important;text-decoration: none !important;}
+.nav-pills li.active {background-color: #fff;}
+.tabContainer {background-color: #fff;display: inline-block;padding: 1em;width: 100%;}
+.tabWrapper {display: none;}
+h1 + .tabContainer {margin-top: 1.5em;}
+.tabContainer h1, .tabContainer h2, .tabContainer h3, .tabContainer h4, .tabContainer h5, .tabContainer h6 {margin-bottom: .75em;margin-top: 0;}
+.mediaTemplate .form-table {margin: 0 -.5em;}
+.mediaTemplate table.form-table + p.submit {margin: 1em 0em 0.5em;padding: 0em;}
+.mediaTemplate .form-table td, .mediaTemplate .form-table th {font-size: .95em;font-weight: 500;padding: .75em .5em;}
+
+@media only screen and (max-width: 767px) {
+	.jp-gui .jp-controls-holder .jp-controls {justify-content: center;width: 100%;}
+}

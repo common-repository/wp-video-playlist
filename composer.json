@@ -1,0 +1,19 @@
+{
+    "name": "seank/wp-video-playlist",
+    "description": "This plugin allow you to add mp4, ogv and Youtube videos.",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sandeep Kumar",
+            "email": "43328839+mrseankumar25@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
